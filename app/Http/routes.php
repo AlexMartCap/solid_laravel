@@ -21,3 +21,8 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+//Possible solució de Stupid case d
+//App::bind('SolidLaravel\Repositories\Contracts\InvoiceRepositoryInterface','SolidLaravel\Repositories\InvoiceRepositoryDB');
+
+//App::bind('SolidLaravel\Output\Contracts\InvoiceShowInterface','SolidLaravel\Output\InvoiceShowHtml');
