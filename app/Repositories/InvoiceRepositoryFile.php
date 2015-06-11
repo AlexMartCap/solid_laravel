@@ -3,14 +3,19 @@
  * Created by Alex Martinez Capilla @2015.
  * User: Alex
  * Date: 11/06/15
- * Time: 16:09
+ * Time: 17:03
  */
 
 namespace SolidLaravel\Repositories;
 
 use SolidLaravel\Invoices;
+use SolidLaravel\Repositories\Contracts\InvoiceRepositoryInterface;
 
-class InvoiceRepository {
+/**
+ * Class InvoiceRepositoryDB
+ * @package SolidLaravel\Repositories
+ */
+class InvoiceRepositoryDB implements InvoiceRepositoryInterface {
 
     /**
      * Return invoice from the database
@@ -18,7 +23,7 @@ class InvoiceRepository {
      * @return Eloquent object
      */
     public function get($id) {
-        return Invoices::find($id);
+        //TODO: get Invoice from file!
     }
 
 }
